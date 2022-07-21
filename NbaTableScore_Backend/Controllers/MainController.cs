@@ -8,7 +8,7 @@ using System.Net;
 
 namespace NbaTableScore_Backend.Controllers
 {
-    [EnableCors("SiteCorsPolicy")]
+    [EnableCors("CorsPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class MainController : ControllerBase

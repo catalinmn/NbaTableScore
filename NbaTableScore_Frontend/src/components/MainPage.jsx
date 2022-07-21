@@ -14,10 +14,9 @@ function MainPage() {
   const fetchData = useCallback(async () => {
     const response = await axios.get("http://localhost:5142/api/Main/GetGames", {
       headers: {
-        "access-control-allow-origin": "*",
-        "access-control-allow-credentials": true,
-        withCredentials: true,
-        allowCredentials: true,
+        "Access-Control-Allow-Origin": "*",
+        //withCredentials: true,
+        //allowCredentials: true,
       },
     });
     const json = await response.data;
