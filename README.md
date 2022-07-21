@@ -1,1 +1,1 @@
-Open projects in visual studio and start them both
+Open the solution in visual studio and start both projects
