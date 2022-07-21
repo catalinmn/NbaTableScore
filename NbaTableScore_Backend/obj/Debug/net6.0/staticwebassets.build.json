@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "xdrNjH8QEgTUFTbsrNIG6NFYOIXJIzTY02HTZbBFJmw=",
+  "Source": "NbaTableScore_Backend",
+  "BasePath": "_content/NbaTableScore_Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
