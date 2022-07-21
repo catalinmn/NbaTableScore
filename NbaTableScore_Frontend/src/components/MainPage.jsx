@@ -31,7 +31,7 @@ function MainPage() {
       .catch(console.error);
   }, [fetchData]);
 
-  // Get current posts
+  // Get current items 
   const indexOfLastItem = currentPage * pageSize;
   const indexOfFirstItem = indexOfLastItem - pageSize;
   const currentGames = games.slice(indexOfFirstItem, indexOfLastItem);
