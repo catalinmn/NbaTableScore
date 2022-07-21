@@ -29,8 +29,13 @@ namespace NbaTableScore_Backend.Controllers
             var httpClient = _httpClientFactory.CreateClient("API");
 
             httpClient.BaseAddress = new Uri(httpClient.BaseAddress + $"?seasons[]={randomYear}&per_page=100");
+            HttpResponseMessage response = await httpClient.GetAsync(httpClient.BaseAddress);
 
-            HttpResponseMessage response = await httpClient.GetAsync(httpClient.BaseAddress + $"?seasons[]={randomYear}&per_page=100");
+            if (response.StatusCode != HttpStatusCode.OK)
+                return new JObject()
+                {
+                    ["Message"] = response.RequestMessage.ToString(),
+                }.ToString();
 
             string outResponse = await response.Content.ReadAsStringAsync();
 
