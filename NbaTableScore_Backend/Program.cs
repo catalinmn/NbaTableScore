@@ -11,7 +11,6 @@ builder.Services.AddHttpClient("API", httpClient =>
     httpClient.BaseAddress = new Uri(config.GetValue<string>("ApiDetails:ApiBaseAddress"));
     httpClient.DefaultRequestHeaders.Add("X-RapidAPI-Key", "335aabf663msh43452f55e991660p143e3djsn1d663ce75b3c");
     httpClient.DefaultRequestHeaders.Add("X-RapidAPI-Host", "free-nba.p.rapidapi.com");
-    httpClient.DefaultRequestHeaders.Add("X-RapidAPI-Host", "free-nba.p.rapidapi.com");
     httpClient.DefaultRequestHeaders.Add("access-control-allow-origin", "*");
 });
 
